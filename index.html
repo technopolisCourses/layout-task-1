@@ -6,6 +6,52 @@
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-    <!-- Здесь напишите форму и сверстайте письмо -->
+    <h1>Подписаться на рассылку:</h1>
+    <br><p>Если вы подпишитесь, то вам на почту будут приходить уведомления.</p><br>
+    <form action="rate" method="POST">
+        <label for="name">Имя и Фамилия</label>
+        <input id="name" pattern="[а-Я]{100000}" placeholder="Имя" name="name" value="" required>
+    <p>
+        <label for="email">Эл. почта</label>
+        <input id="email" placeholder="email@example.com" name="email" value="" required>
+    </p>
+        <label for="telephone">Телефон</label>
+        <input id="telephone" pattern="{12}" placeholder="+71234567890" name="telephone" value="" required>
+    <p>
+        <br>Я хочу получать уведомления на:<br>
+    </p>
+        <label for="phone">Телефон</label>
+        <input id="phone" name="phone" type="checkbox" value="phone" checked>
+    <p>
+        <label for="mailing">Эл. почта</label>
+        <input id="mailing" name="mailing" type="checkbox" value="mailing" checked>
+    </p>
+        <button type="submit">Подписаться</button>
+    </form>
+    <table class="mailing-letter">
+        <tr>
+            <td>
+                <p class="zero">Здравствуйте, пользователь!</p>
+                <p class="first">Вы подписались на рассылку от компании Oriflame.</p>
+                <p class="second">Вы будете получать новости на эту почту или на указанный телефон!</p>
+                <p class="third">Для подтверждения, пройдите по <a href="#">ссылке</a></p>
+            </td>
+            <td>
+                <h2>ТехноПолис</h2>  
+            </td>
+        </tr>
+            <tr>
+                <td colspan="2" ><hr></td>
+            </tr>
+        
+        <tr>
+            <td>
+                <p><a href="#">Пожаловаться</a></p>
+            </td>
+            <td>
+                <p class="igor">2019, <a href="#">Игарек</a></p>
+            </td>    
+        </tr>
+    </table>    																	
 </body>
 </html>

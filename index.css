@@ -1,1 +1,22 @@
-/* Здесь напишите ваши стили */
+.mailing-letter
+{
+    max-width: 600px;
+}
+
+.zero
+{
+    font-size: 30px;
+}
+
+h2
+{
+    position: relative;
+    right: 10px;
+    bottom: 10px;
+}
+
+.igor
+{
+    position: relative;
+    right: -30px;
+}
